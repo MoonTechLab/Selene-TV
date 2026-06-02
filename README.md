@@ -4,7 +4,7 @@
   <img src="banner.png" alt="Selene-TV" width="440">
 </div>
 
-> 📺 **Selene-TV** 是以 [MoonTV](https://github.com/MoonTechLab/LunaTV) / [Helios](https://github.com/MoonTechLab/Helios) 为后端的 **Android TV（Leanback）客户端**，在保证原汁原味的同时，针对大屏与遥控器操作做了沉浸式重构。它基于 **Kotlin + Jetpack Compose for TV** 构建，采用 **ExoPlayer (Media3) / mpv** 双内核播放，并内置手机扫码遥控。
+> 📺 **Selene-TV** 是以 [MoonTV](https://github.com/MoonTechLab/LunaTV) / [Helios](https://github.com/MoonTechLab/Helios) 为后端的 **Android TV（Leanback）客户端**，在保证原汁原味的同时，针对大屏与遥控器操作做了沉浸式重构。它基于 **Kotlin + Jetpack Compose for TV** 构建，采用 **ExoPlayer (Media3) / mpv** 双内核播放，内置手机扫码遥控，并支持多平台弹幕聚合。
 
 <div align="center">
 
@@ -39,6 +39,7 @@
 ### 🎯 核心功能
 - **多源聚合搜索** —— 多个视频源并发聚合，快速定位想看的内容
 - **测速优选** —— 一键为各播放源并发测速，按画质 + 速度实时重排，快速选中最流畅的源
+- **多平台弹幕** —— 自动匹配当前剧集弹幕，聚合哔哩哔哩 / 腾讯视频 / 爱奇艺 / 优酷 / 芒果TV / 乐视，并自动选用弹幕最多的来源；播放器内可切换来源、调整显示区域 / 不透明度 / 速度 / 字号 / 密度，支持「关闭 / 手动 / 自动」三种模式
 - **分类浏览** —— 电影、剧集、动漫、综艺、直播，分类与地区筛选一应俱全
 - **动漫每日放送** —— Bangumi 风格的番剧周表，按星期追番
 - **继续观看 / 我的收藏** —— 自动记录播放进度断点续播，卡片长按管理
@@ -96,6 +97,7 @@
 - **Kotlin 2.2** —— 开发语言
 - **Jetpack Compose for TV (Material3)** —— 声明式 TV UI 框架
 - **ExoPlayer (Media3) / mpv** —— 双播放内核，可按需切换
+- **akdanmaku** —— OpenGL 弹幕渲染引擎
 - **Ktor (Netty)** —— 内嵌 HTTP 服务器，承载手机遥控
 - **Coil** —— 图片加载与缓存（含豆瓣防盗链处理）
 - **OkHttp** —— 网络请求（信任自签证书）
